@@ -1,22 +1,24 @@
+import React from 'react';
 import NavBar from "./components/navbar";
 import Calculator from "./components/calculator";
-import About from "./components/about"
-import './App.css'
-import { Router, Route, HashRouter, Routes} from "react-router-dom";
+import About from "./components/about";
+import './App.css';
+import { HashRouter, Route, Routes } from "react-router-dom";
+import Home from './components/home';
 
 function App() {
     return (
-        <>
-        <NavBar/>
-        <Calculator/>
-        {/* // <HashRouter>
-        //     <NavBar/>
-        //     <Routes>
-        //         <Route path="/about" element={<About/>} />
-        //         <Route path="/home" element={<Calculator/>} />
-        //     </Routes>
-        // </HashRouter> */}
-        </>
-    )
+        <HashRouter>
+            <div>
+                <NavBar/>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/home" element={<Calculator />} />
+                </Routes>
+            </div>
+        </HashRouter>
+    );
 }
-export default App
+
+export default App;
