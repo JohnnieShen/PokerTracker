@@ -6,13 +6,17 @@ import { Router, Route, HashRouter, Routes} from "react-router-dom";
 
 function App() {
     return (
-        <HashRouter>
-            <NavBar/>
-            <Routes>
-                <Route path="/about" element={<About/>} />
-                <Route path="/home" element={<Calculator/>} />
-            </Routes>
-        </HashRouter>
+        <>
+        <NavBar/>
+        <Calculator/>
+        {/* // <HashRouter>
+        //     <NavBar/>
+        //     <Routes>
+        //         <Route path="/about" element={<About/>} />
+        //         <Route path="/home" element={<Calculator/>} />
+        //     </Routes>
+        // </HashRouter> */}
+        </>
     )
 }
 export default App
