@@ -1,0 +1,57 @@
+:root {
+  background-color: rgb(230, 230, 230);
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.navbar .about {
+  flex-basis: 20%;
+  font-size: 150%;
+
+}
+.navbar .title {
+  flex-basis: 60%;
+  font-size: 250%;
+}
+
+.navbar a:link,
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  background-color: #414141; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+}
+
+input {
+  padding: 10px 15px;
+}
+
+.players {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 5px, black;
+  line-height: 200%;
+}
