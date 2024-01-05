@@ -12,9 +12,9 @@ function App() {
             <div>
                 <NavBar/>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/home" element={<Calculator />} />
+                    <Route path="/calculator" element={<Calculator />} />
                 </Routes>
             </div>
         </HashRouter>

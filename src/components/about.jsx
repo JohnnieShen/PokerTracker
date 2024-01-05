@@ -7,7 +7,9 @@ const About = () => {
             <br/>
             <h2>Seriously it's not even funny</h2>
             <br/>
-            <h2>Anyways here is the github link for the project, TODO</h2>
+            <a href='https://github.com/JohnnieShen/PokerTracker'>Anyways here is the github link for the project</a>
+            <br/>
+            <h3>Logo by mudassir101 on Freepik</h3>
         </div>
     );
 }
